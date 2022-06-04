@@ -5,3 +5,7 @@ project(
 )
 
 add_executable(${PROJECT_NAME} main.cpp)
+
+add_subdirectory(Adder)
+
+target_link_libraries(${PROJECT_NAME} adder)
