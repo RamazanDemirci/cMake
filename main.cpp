@@ -1,9 +1,11 @@
 #include <iostream>
 #include "Adder/adder.h"
 #include <GLFW/glfw3.h>
+#include <OLASConfig.h>
 
-int main(){
+int main(int argc, char* argv[ ]){
   std::cout << "Helllo, Ramazan";
+  std::cout << argv[0] << " Version " <<  OLAS_VERSION_MAJOR << "." << OLAS_VERSION_MINOR << "\n";
 
   float res = adder(13.4, 45.32);
 
