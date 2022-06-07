@@ -52,3 +52,6 @@ ${EXTRA_LIB_DIRS}
 )
 
 target_link_libraries(${PROJECT_NAME} ${EXTRA_LINKS} glfw)
+
+install(TARGETS ${PROJECT_NAME} DESTINATION bin)
+install(FILES "${PROJECT_BINARY_DIR}/OLASconfig.h" DESTINATION include)
